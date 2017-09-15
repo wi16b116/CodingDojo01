@@ -28,9 +28,12 @@ namespace CodingDojo01
                     float theFahrenheitTemp = float.Parse(fahrenheit);
                     FahrenheitConverter(theFahrenheitTemp);
                     break;
-                //case "3":
-                //    reaumurconverter();
-                //    break;
+                case "3":
+                    Console.Write("Temperatur in reaumur to convert: ");
+                    string reaumur = Console.ReadLine();
+                    float theReaumurTemp = float.Parse(reaumur);
+                    ReaumurConverter(theReaumurTemp);
+                    break;
                 //case "4":
                 //    kelvinconverter();
                 //    break;
@@ -57,6 +60,14 @@ namespace CodingDojo01
                 "Celcius: {0} \n" + 
                 "Reaumur: {1} \n" +
                 "Kelvin: {2}", ((temp - 32) / 1.8), ((temp - 32) / 2.25), ((temp + 459.67) / 1.8));
+        }
+
+        public static void ReaumurConverter(float temp)
+        {
+            Console.WriteLine(temp + " Reaumur converted: \n" +
+               "Celcius: {0} \n" +
+               "Fahrenheit: {1} \n" +
+               "Kelvin: {2}", ((temp - 32) / 1.8), ((temp - 32) / 2.25), ((temp + 459.67) / 1.8));
         }
 
         public  static void Menu()

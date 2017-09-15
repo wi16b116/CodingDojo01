@@ -1,0 +1,29 @@
+* commit 4c9cebdf3595ec4f7e543b53d402afb6329314db
+| Author: Ian <ianburrows.sa@gmail.com>
+| Date:   Fri Sep 15 22:55:09 2017 +0200
+| 
+|     fahrenheit
+| 
+* commit c9676420aec720051dd1b8a26f3d3412ac685bc9
+| Author: Ian <ianburrows.sa@gmail.com>
+| Date:   Fri Sep 15 22:19:05 2017 +0200
+| 
+|     added celciusconverter
+| 
+* commit 659f9092ad77c6375465390f39e892bfc92c6034
+| Author: Ian <ianburrows.sa@gmail.com>
+| Date:   Fri Sep 15 21:49:33 2017 +0200
+| 
+|     Start of coding dojo 01
+| 
+* commit 2a7a446cd5262d48892b10a466eae711ca8b81a9
+| Author: Ian <ianburrows.sa@gmail.com>
+| Date:   Fri Sep 15 21:43:05 2017 +0200
+| 
+|     Add project files.
+| 
+* commit 2b3857356b2b199edfb8f1627d9c2a3ffc8fef6a
+  Author: Ian <ianburrows.sa@gmail.com>
+  Date:   Fri Sep 15 21:43:01 2017 +0200
+  
+      Add .gitignore and .gitattributes.
