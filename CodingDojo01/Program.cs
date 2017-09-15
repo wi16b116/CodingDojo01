@@ -17,25 +17,25 @@ namespace CodingDojo01
             switch (choice)
             {
                 case "1":
-                    Console.Write("Temperatur in celcius to convert: ");
+                    Console.Write("Temperature in celcius to convert: ");
                     string celcius = Console.ReadLine();
                     float theCelciusTemp = float.Parse(celcius);
                     CelciusConverter(theCelciusTemp);
                     break;
                 case "2":
-                    Console.Write("Temperatur in fahrenheit to convert: ");
+                    Console.Write("Temperature in fahrenheit to convert: ");
                     string fahrenheit = Console.ReadLine();
                     float theFahrenheitTemp = float.Parse(fahrenheit);
                     FahrenheitConverter(theFahrenheitTemp);
                     break;
                 case "3":
-                    Console.Write("Temperatur in reaumur to convert: ");
+                    Console.Write("Temperature in reaumur to convert: ");
                     string reaumur = Console.ReadLine();
                     float theReaumurTemp = float.Parse(reaumur);
                     ReaumurConverter(theReaumurTemp);
                     break;
                 //case "4":
-                //    kelvinconverter();
+                //    KelvinConverter();
                 //    break;
                 default:
                     Console.WriteLine("Please enter a number between 1 and 4.");
