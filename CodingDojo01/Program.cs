@@ -10,25 +10,24 @@ namespace CodingDojo01
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Unit to convert from: \n" +
-                "1. Celcius \n" +
-                "2. Fahrenheit \n" +
-                "3. Reaumur \n" +
-                "4. Kelvin");
+            Menu();
 
             string choice = Console.ReadLine();
 
             switch (choice)
             {
                 case "1":
-                    Console.Write("Enter a temperature to convert: ");
-                    string temp = Console.ReadLine();
-                    CelciusConverter(temp);
-                    Console.ReadLine();
+                    Console.Write("Temperatur in celcius to convert: ");
+                    string celcius = Console.ReadLine();
+                    float theCelciusTemp = float.Parse(celcius);
+                    CelciusConverter(theCelciusTemp);
                     break;
-                //case "2":
-                //    fahrenheitconverter();
-                //    break;
+                case "2":
+                    Console.Write("Temperatur in fahrenheit to convert: ");
+                    string fahrenheit = Console.ReadLine();
+                    float theFahrenheitTemp = float.Parse(fahrenheit);
+                    FahrenheitConverter(theFahrenheitTemp);
+                    break;
                 //case "3":
                 //    reaumurconverter();
                 //    break;
@@ -40,15 +39,33 @@ namespace CodingDojo01
                     break;
             }
 
+            Console.ReadLine();
+
         }
 
-        public static void CelciusConverter(string temp)
+        public static void CelciusConverter(float temp)
         {
-            float newTemp = float.Parse(temp);
             Console.WriteLine(temp + " Celcius converted: \n" +
                 "Fahrenheit: {0} \n" + 
                 "Reaumur: {1} \n" +
-                "Kelvin: {2}", (newTemp * 1.8 + 32), (newTemp * 0.8), (newTemp + 237.15));
+                "Kelvin: {2}", (temp * 1.8 + 32), (temp * 0.8), (temp + 237.15));
+        }
+
+        public static void FahrenheitConverter(float temp)
+        { 
+             Console.WriteLine(temp + " Fahrenheit converted: \n" +
+                "Celcius: {0} \n" + 
+                "Reaumur: {1} \n" +
+                "Kelvin: {2}", ((temp - 32) / 1.8), ((temp - 32) / 2.25), ((temp + 459.67) / 1.8));
+        }
+
+        public  static void Menu()
+        {
+            Console.WriteLine("Unit to convert from: \n" +
+               "1. Celcius \n" +
+               "2. Fahrenheit \n" +
+               "3. Reaumur \n" +
+               "4. Kelvin");
         }
     }
 }
