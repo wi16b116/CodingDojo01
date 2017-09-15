@@ -10,6 +10,11 @@ namespace CodingDojo01
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Unit to convert from: \n" +
+                "1. Celcius \n" +
+                "2. Fahrenheit \n" +
+                "3. Reaumur \n" +
+                "4. Kelvin");
         }
     }
 }
